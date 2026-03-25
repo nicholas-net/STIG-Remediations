@@ -41,7 +41,7 @@ else {
     # Disables "Always install with elevated privileges"
     Set-ItemProperty -Path $regPath -Name "AlwaysInstallElevated" -Value 0
     
-    if (Get-ItemPropertyValue -Name "AlwaysInstallElevated" -Path $regPath -eq 0) {
+    if ((Get-ItemPropertyValue -Name "AlwaysInstallElevated" -Path $regPath) -eq 0) {
         
          Write-Output "Windows Installer feature 'Always install with elevated privileges' successfully disablednAlwaysInstallElevated Value: 0"
     }
