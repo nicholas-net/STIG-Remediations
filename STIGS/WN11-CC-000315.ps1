@@ -43,7 +43,7 @@ else {
     
     if ((Get-ItemPropertyValue -Name "AlwaysInstallElevated" -Path $regPath) -eq 0) {
         
-         Write-Output "Windows Installer feature 'Always install with elevated privileges' successfully disablednAlwaysInstallElevated Value: 0"
+         Write-Output "Windows Installer feature 'Always install with elevated privileges'`nSuccessfully disabled AlwaysInstallElevated Value: 0"
     }
 
     else {
