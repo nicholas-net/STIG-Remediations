@@ -1,5 +1,6 @@
 ﻿<#
 .SYNOPSIS
+
     This PowerShell script ensures the Windows Installer ‘Always install with elevated privileges’ setting is disabled by configuring the appropriate registry value.
 
 .NOTES
